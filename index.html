@@ -18,7 +18,8 @@
       margin: 0;
       padding: 20px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
     .container {
       width: 100%;
@@ -27,6 +28,7 @@
       border-radius: 12px;
       padding: 24px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-sizing: border-box;
     }
     h1 {
       font-size: 1.4rem;
@@ -114,6 +116,51 @@
       margin-top: 16px;
       line-height: 1.4;
     }
+    /* 広告エリア用スタイル */
+    .ad-card {
+      width: 100%;
+      max-width: 480px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 15px;
+      margin-top: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border: 1px solid #cbd5e1;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .ad-title {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+    .ad-divider {
+      border-top: 1px dashed #e2e8f0;
+      margin: 15px 0;
+    }
+    /* 関連ツールリンクエリア */
+    .link-card {
+      width: 100%;
+      max-width: 480px;
+      margin-top: 15px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      box-sizing: border-box;
+    }
+    .link-card h3 {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .link-card ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      line-height: 1.8;
+    }
   </style>
 </head>
 <body>
@@ -183,6 +230,40 @@
 
   <!-- 注意書き -->
   <p class="note">※端数処理の都合上、店舗のレジ計算やシステムにより数円の誤差が生じる場合があります。</p>
+</div>
+
+<!-- 広告エリア -->
+<div class="ad-card">
+  <div class="ad-title">🛍️ おすすめのお買い物・お役立ち情報</div>
+  
+  <!-- 楽天広告 -->
+  <div style="margin-bottom: 10px;">
+    <a href="https://rpx.a8.net/svt/ejp?a8mat=4BCMO0+FUDEXU+2HOM+656YP&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0ea62065.34400275.0ea62066.204f04c0%2Fa26092964500_4BCMO0_FUDEXU_2HOM_656YP%3Fpc%3Dhttp%253A%252F%252Fwww.rakuten.co.jp%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252F" rel="nofollow" target="_blank">
+      <img src="http://hbb.afl.rakuten.co.jp/hsb/0ec09ba3.bc2429d5.0eb4bbaa.95151395/" border="0" alt="楽天市場">
+    </a>
+    <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BCMO0+FUDEXU+2HOM+656YP" alt="">
+  </div>
+
+  <div class="ad-divider"></div>
+
+  <!-- ワラウ広告 -->
+  <div>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BEJHE+AQZWMA+3ZZC+HVFKY" rel="nofollow" target="_blank">「ワラウ」は登録無料で使えるポイ活の定番サイト！</a>
+    <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BEJHE+AQZWMA+3ZZC+HVFKY" alt="">
+  </div>
+</div>
+
+<!-- 便利な関連ツールリンクエリア -->
+<div class="link-card">
+  <h3>便利な関連ツール</h3>
+  <ul>
+    <li>👉 <a href="https://konetu.pages.dev/">光熱費管理</a></li>
+    <li>👉 <a href="https://shoumikigen.pages.dev/">賞味期限管理</a></li>
+    <li>👉 <a href="https://kaimono-4nt.pages.dev/">買い物リスト</a></li>
+    <li>👉 <a href="https://poinnto.pages.dev/">ポイ活管理</a></li>
+    <li>👉 <a href="https://souji-aap.pages.dev/">掃除管理</a></li>
+    <li>👉 <a href="https://running-29c.pages.dev/">ランニング記録</a></li>
+  </ul>
 </div>
 
 <script>
